@@ -1,8 +1,10 @@
 # Roanoke Challenge Write Up
 
 ## Background
-07/14/2023 @plasma in the Roanoke Discord (https://discordapp.com/invite/dtXeKFM) shared an image of a flyer his friend found at Sweet Donkey.
-![challenge-flyer](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/31e4c0d3-0450-4db0-ae95-eb483385204d)
+On 07/14/2023 @plasma in the Roanoke Discord (https://discordapp.com/invite/dtXeKFM) shared an image of a flyer his friend found at Sweet Donkey.
+
+![challenge-flyer](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/53304377-ba3d-4ec8-b1c4-a41730968747)
+
 
 This seemed like a fun challenge and a great way to solve problems with some fellow Roanokers; so away we went.
 
@@ -14,7 +16,9 @@ Some things to note:
 - The backwards text (in a readable format) is "DoesRoanokeHaveAnyTechNerds?"
 
 When visiting the URL, you are presented with a protected paste.
-![paste-prompt](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/8e40b941-7292-4347-a418-8acf43759660)
+
+![paste-prompt](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/b061b573-7900-4c60-869f-310d5215b47f)
+
 
 We ended up trying variations of the backwards text and after handjamming for a minute or so obtained access to the paste with: "sdreNhceTynAevaHekonaoRseoD"; this is exactly what was printed on the flyer, but with the "?" stripped off the front.
 
@@ -165,7 +169,9 @@ We need to tackle the ciphertext block before we can continue. We know that "/" 
 ```
 
 We can see that the number of items on each line are consistent - either there are 4 items on a line or there is only one. Let's see if we can determine the rules for the cipher based on our provided information. Let's analyze the first entry in our ciphertext as we already have the plaintext for it.
-![image](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/e9452db6-25e5-4e91-8477-1a234f320120)
+
+![cipher-breakdown](https://github.com/dru1d-foofus/RoanokeChallengeWriteUp/assets/4245930/55b6cc17-8c5f-482e-beec-6b28f7247d75)
+
 
 - You can see that the first item represents the poem in the collection. This will always be 1 - 4; it is the "Four Quartets" after all.
 - The second item varies pretty drastically. This is indicative of it being assigned to a line within the poem.
