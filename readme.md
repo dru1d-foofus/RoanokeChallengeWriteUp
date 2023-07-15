@@ -186,3 +186,46 @@ Line 2
   Line 3
 Line 4
 ```
+
+Let's try to figure out how to standardize the key material in the poems so that we can automate this decoding process. Code and input files can be found at the following ![gist](https://gist.github.com/dru1d-foofus/ebc8a5596322be6952d48dd9f0752080). One thing that has been made abundantly clear is that the whitespace that prepends a line is important in order to get the proper key to the cipher.
+
+Let's look at an (admittedly long) excerpt from poem #2 that showcases all of the different ways you might see indentation in these poems:
+
+```
+And to shake the tattered arras woven with a silent motto.
+
+    In my beginning is my end. Now the light falls
+Across the open field, leaving the deep lane
+Shuttered with branches, dark in the afternoon,
+Where you lean against a bank while a van passes,
+And the deep lane insists on the direction
+Into the village, in the electric heat
+Hypnotised. In a warm haze the sultry light
+Is absorbed, not refracted, by grey stone.
+The dahlias sleep in the empty silence.
+Wait for the early owl.
+
+                                    In that open field
+If you do not come too close, if you do not come too close,
+On a summer midnight, you can hear the music
+```
+
+Based on what we see in the challenge, we should be able to treat a single instance of indentation as its own line, so,
+
+```
+In my beginning is my end. Now the light falls
+```
+
+is treated as its own line. However...
+
+```
+                                    In that open field
+```                                    
+
+has multiple levels of indentation so it should be appended to the line that precedes it, like this:
+
+```
+Wait for the early owl. In that open field
+```
+
+If this is correct, we just need to work through all four poems and align them to this standard. This is currently where we are stuck... :(
