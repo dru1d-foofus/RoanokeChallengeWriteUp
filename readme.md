@@ -187,7 +187,7 @@ Line 2
 Line 4
 ```
 
-Let's try to figure out how to standardize the key material in the poems so that we can automate this decoding process. Code and input files can be found at the following ![gist](https://gist.github.com/dru1d-foofus/ebc8a5596322be6952d48dd9f0752080). One thing that has been made abundantly clear is that the whitespace that prepends a line is important in order to get the proper key to the cipher.
+Let's try to figure out how to standardize the key material in the poems so that we can automate this decoding process. Code and input files can be found at the following [gist](https://gist.github.com/dru1d-foofus/ebc8a5596322be6952d48dd9f0752080). One thing that has been made abundantly clear is that the whitespace that prepends a line is important in order to get the proper key to the cipher.
 
 Let's look at an (admittedly long) excerpt from poem #2 that showcases all of the different ways you might see indentation in these poems:
 
