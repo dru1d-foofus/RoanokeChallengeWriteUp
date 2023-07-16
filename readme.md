@@ -1,5 +1,13 @@
 # Roanoke Challenge Write Up
 
+## Greetz
+
+- [@slackish](https://github.com/slackish)
+- [@BenTheCyberOne](https://github.com/BenTheCyberOne)
+- Other folks in the Roanoke discord who expressed interest in this rabbit hole.
+
+It was a blast running through this with you and brainstorming.
+
 ## Background
 On 07/14/2023 @plasma in the Roanoke Discord (https://discordapp.com/invite/dtXeKFM) shared an image of a flyer his friend found at Sweet Donkey.
 
