@@ -267,4 +267,4 @@ We have a large chunk of presumably AES encrypted text. Let's get to work...
   </body>
 </html>
 ```
-Combining the AES password parts, we get: `2f2bede7e3f0b74dd1dfcf08d8399065b367dcac`; decrypting the AES encoded blob leaves us with one final message that I won't be sharing here... :) Thanks for the fun challenge, friend.
+Combining the AES password parts, we get: `2f2bede7e3f0b74dd1dfcf08d8399065b367dcac` (fun fact: this is 80 rounds of SHA1 for "technerds"); decrypting the AES encoded blob leaves us with one final message that I won't be sharing here... :) Thanks for the fun challenge, friend.
