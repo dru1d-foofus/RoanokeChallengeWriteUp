@@ -228,7 +228,7 @@ has multiple levels of indentation so it should be appended to the line that pre
 Wait for the early owl. In that open field
 ```
 
-If this is correct, we just need to work through all four poems and align them to this standard. This is currently where we are stuck... :(
+If this is correct, we just need to work through all four poems and align them to this standard. ~This is currently where we are stuck... :(~ Turns out you need to ignore special characters when parsing the poem text. The python script in the above gist has been updated to reflect this change. 
 
 ```
 /h/ctf$ python3 parse.py 
